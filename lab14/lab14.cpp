@@ -55,23 +55,31 @@ int main() {
     // Pennies are now what is left of and is held by the variable number_of_cents
     
 
-    
+    // This will output how many of each coin the user has
     cout << "You have " << num_of_quart << " quarters.\n"
          << "You have " << num_of_dimes << " dimes.\n"
          << "You have " << num_of_nickels << " nickels.\n"
          << "And " << num_of_pennies << " pennies." << endl;
          
+    // This will add up all of your coins and provide a dollar value     
     total_money = static_cast<double>(num_of_quart * quarters) + static_cast<double>(num_of_dimes * dimes) + static_cast<double>(num_of_nickels * nickels) + static_cast<double>(num_of_pennies *pennies);
     
+    // This will set the correct dollar value to the total coins
     total_money = total_money / 100;
     
+    // This will display total dollar amount of coins
     cout << "Putting your total at $" << total_money << " dollars.\n";
     
+    // This calculates the fees incurred
     fees_paid = total_money * fees;
+    
+    // This outputs the fees
     cout << "Fees paid: $" << fees_paid << endl;
     
+    // This calculates money made after fees
     after_fees = total_money - fees_paid;
     
+    // This outputs your total take home money
     cout << "Your total after fees are : $"<< after_fees << "." << endl;
     
     
