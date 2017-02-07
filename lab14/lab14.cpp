@@ -68,11 +68,11 @@ int main() {
     cout << "Putting your total at $" << total_money << " dollars.\n";
     
     fees_paid = total_money * fees;
-    cout << "Fees paid: " << fees_paid << endl;
+    cout << "Fees paid: $" << fees_paid << endl;
     
     after_fees = total_money - fees_paid;
     
-    cout << "Your total after fees are : "<< after_fees << "." << endl;
+    cout << "Your total after fees are : $"<< after_fees << "." << endl;
     
     
     
