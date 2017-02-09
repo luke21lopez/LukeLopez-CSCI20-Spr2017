@@ -32,6 +32,8 @@ int main() {
     cout << "Just one more plural noun and we are done: ";
     cin >> plural_noun3;
     
+    // This will output the finished madlib
+    
     cout << "\nDear " << other_name << ",\n"
          << plural_noun1 << " are red,\n"
          << plural_noun2 << " are blue,\n"
