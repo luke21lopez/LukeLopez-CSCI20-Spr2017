@@ -3,7 +3,11 @@
  * Prof : A.Browne
  * Assignment: 1.0 Calculators
 */
-    // This program will calculate a person's check after deductions.
+    // This program will calculate a person's check after deductions. The user will be prompted to input
+    // A person's first and last name, there rate of pay, and the amount of hours worked. 
+    // The program will then deduct health deduction predeterimined and taxes that is set at 17%.
+    // It till then print out there gross,deductions, and net pay. 
+    
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -11,7 +15,8 @@ using namespace std;
     
 struct employee
 {
-    char _name[30];
+    string firstName;
+    string lastName;
     double _wage;
     int _hrswrkd;
 };
@@ -26,8 +31,8 @@ int main() {
     
     // This will prompt user for there information
     cout << "Thank you for using, How Much is My Check!\n";
-    cout << "\nPlease provide us your name: ";
-    cin.getline(_user._name,30);
+    cout << "\nPlease provide us your first and last name: ";
+    cin >> _user.firstName >> _user.lastName;
     cout << "\nWhat is your rate of pay? : ";
     cin >> _user._wage;
     cout << "\nHow many hours did you work this week? :";
@@ -52,7 +57,7 @@ int main() {
     net_pay = (gross_pay - _health) - _taxes;
     }
     // Will provide user results of there check from info provided
-    cout << "\nEmployee:    "<< _user._name << ".\n";
+    cout << "\nEmployee:    "<< _user.firstName << " "<< _user.lastName << ".\n";
     cout << "--------------------------- "<< endl;
     cout << "Rate of Pay: $"<< _user._wage <<".\n";
     cout << "Hours Worked: "<< _user._hrswrkd << endl;
