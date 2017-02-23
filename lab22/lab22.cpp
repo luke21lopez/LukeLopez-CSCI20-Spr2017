@@ -4,6 +4,8 @@
  * Lab 22 
 */
 
+// This program will simply generate a random number everytime it is ran. I have used 
+// the cstdlib and ctime library to help generate a random number
 
 #include <iostream>
 #include <cstdlib>// holds random operators
@@ -11,7 +13,7 @@
 using namespace std;
 
 
-// This program will simply generate a random number everytime it is ran.
+
 
 int randomNumber(){
     srand(time(0)); // this will generate a random seed number provided by current time
