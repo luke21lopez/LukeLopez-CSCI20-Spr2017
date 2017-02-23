@@ -19,7 +19,7 @@ int randomNumber(){
     srand(time(0)); // this will generate a random seed number provided by current time
     
     // this will print out a random number using the rand function rand() from 1-100
-    cout << "Your random number is: " << rand() % (100 - 1) + 1  << endl;
+    cout << "Your random number is: " << rand() % (101 - 1) + 1  << endl;
     return 0;
 }
 
