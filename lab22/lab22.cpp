@@ -13,7 +13,7 @@
 using namespace std;
 
 
-
+// This is a function that will generate the random number and printit out
 
 int randomNumber(){
     srand(time(0)); // this will generate a random seed number provided by current time
