@@ -25,7 +25,9 @@ int main(){
     double total;
     int devices;
     char corporate;
-    
+    int numOfSmartPhones;
+    int numOfDumbPhones;
+    int numOfTablets;
     
     cout << "How many devices do you have: ";
     cin >> devices;
@@ -119,6 +121,8 @@ int main(){
         discount = 0;
     }
     
+    
+   
     
     
     
