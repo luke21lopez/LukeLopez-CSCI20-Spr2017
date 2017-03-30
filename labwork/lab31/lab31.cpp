@@ -5,126 +5,50 @@
 #include <string>
 using namespace std;
 
+/*Device charge – free for dumb phone, $5 for smart phone, $10 tablet
+Monthly charge – $30 for unlimited talk and text
+Unlimited data – $75 for unlimited talk, text and data (up to 10 GB and $1.50 for each GB after that)
+Pay per data charge - $5 for the first GB of data and $0.75 for each GB or portion there of up to 5 GB. $1.50 for each GB or portion there of up to 15 GB.  $3 for each GB after that.
+Corporate Discount – 10% discount for corporate customers
+Family Plan Discount - $3 per phone line over 2.
+*/
 
-
-
+int deviceCharge(string);
+void monthlyCharge(string,int);
 
 int main(){
+    string device;
+    int gbUsed;
     
-    int deviceCharge = 0;
-    int monthlyCharge = 30;
-    int unlimitedData = 75;
-    double payPerDataCharge = 0;
-    string deviceOne;
-    string deviceTwo;
-    string deviceThree;
-    string deviceFour;
-    double gigaBytes;
-    bool corpDiscount;
-    double discount;
-    double total;
-    int devices;
-    char corporate;
-    int numOfSmartPhones;
-    int numOfDumbPhones;
-    int numOfTablets;
-    
-    cout << "How many devices do you have: ";
-    cin >> devices;
-    
-    if (devices == 1){
-        cout << "What type of device do you have: ";
-        cin >> deviceOne;
-    } else if (devices == 2) {
-        cout << "type of your first device: ";
-        cin >> deviceOne;
-        cout << "type of your second device: ";
-        cin >> deviceTwo;
-    } else if (devices == 3) {
-        cout << "type of your first device: ";
-        cin >> deviceOne;
-        cout << "type of your second device: ";
-        cin >> deviceTwo;
-        cout << "type of your third device: ";
-        cin >> deviceThree;
-    } else if (devices == 4) {
-        cout << "type of your first device: ";
-        cin >> deviceOne;
-        cout << "type of your second device: ";
-        cin >> deviceTwo;
-        cout << "type of your third device: ";
-        cin >> deviceThree;
-        cout << "type of your fourth device: ";
-        cin >> deviceFour;
-    }
-    
-    
-    
-    if (deviceOne == "smartphone") {
-        deviceCharge = 5;
-    } else if (deviceOne == "tablet") {
-        deviceCharge = 10;
-    } else if (deviceOne == "dumbphone") {
-        deviceCharge = 0;
-    }
-    
-        if (deviceTwo == "smartphone") {
-        deviceCharge = 5;
-    } else if (deviceTwo == "tablet") {
-        deviceCharge = 10;
-    } else if (deviceTwo == "dumbphone") {
-        deviceCharge = 0;
-    }
-    
-        if (deviceThree == "smartphone") {
-        deviceCharge = 5;
-    } else if (deviceThree == "tablet") {
-        deviceCharge = 10;
-    } else if (deviceThree == "dumbphone") {
-        deviceCharge = 0;
-    }
-    
-        if (deviceFour == "smartphone") {
-        deviceCharge = 5;
-    } else if (deviceFour == "tablet") {
-        deviceCharge = 10;
-    } else if (deviceFour == "dumbphone") {
-        deviceCharge = 0;
-    } 
-    
-    cout << "How many gigaBytes do you use? ";
-    cin >> gigaBytes;
-   
-    
-    
-    if (gigaBytes <= 1) {
-        payPerDataCharge = 5;
-    } else if ((gigaBytes > 1) && (gigaBytes <= 5)){
-        payPerDataCharge = 5 + (.75 * (gigaBytes - 1));
-    } else if ((gigaBytes > 5) && (gigaBytes <= 10)) {
-        payPerDataCharge = unlimitedData;
-    }
-    
-    
-    cout << "Do you have a corporate discount? y or n: ";
-    cin >> corporate;
-    
-    if (corporate == 'y') {
-        corpDiscount = 1;
-    } else {
-        corpDiscount = 0;
-    }
-    
-    if (corpDiscount) {
-        discount = total * .10;
-    } else {
-        discount = 0;
-    }
-    
-    
-   
-    
-    
+
     
     return 0;
+}
+
+int deviceCharge(string device_){
+    int deviceCost;
+    if (device_ == "smart") {
+        deviceCost = 5;
+    } else if (device_ == "tablet") {
+        deviceCost = 10;
+    } else {
+        deviceCost = 0;
+    }
+    
+    return deviceCost;
+}
+
+void monthlyCharge(string device,int gigaBytes){
+    int monthCharge;
+    int deviceCost = deviceCharge(device);
+    
+    if (gigaBytes == 0) {
+        monthCharge = 30;
+    } else if (gigaBytes)
+    
+    
+    
+    
+    
+    
 }
