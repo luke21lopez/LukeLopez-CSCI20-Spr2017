@@ -1,3 +1,10 @@
+/* Name: Luke Lopez
+ * Prof: April Brown
+ * Assignment: Assignment 3.0 / Rock, Paper, Scissors, Lizard, Spock
+ */
+
+
+
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
