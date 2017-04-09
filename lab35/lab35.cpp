@@ -35,4 +35,4 @@ int main(){
    return 0;
 }
 
-/* Please refer to word document for debugging procedures.
+// Please refer to word document for debugging procedures.
