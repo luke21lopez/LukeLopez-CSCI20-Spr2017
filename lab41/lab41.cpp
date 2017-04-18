@@ -27,7 +27,7 @@ using namespace std;
 
 class ArrayTools {
   public:  
-  void a(int array[]);
+  ArrayTools(int[],int);
   void Print();
   int Find_min(int, int);
   int Find_max(int, int);
@@ -35,6 +35,9 @@ class ArrayTools {
   int Search(int);
   int Is_sorted();
   
+  private:
+  int array_size = 0;
+  int store_array[99];
 };
 
 
@@ -50,7 +53,7 @@ int main(){
     for(int i = 0; i<SIZE;i++){
         cin >> myArray[i];
     }
-    ArrayTools a(myArray);
+    ArrayTools a(myArray,SIZE);
     
     a.Print();
     cout<<"Min: "<<a.Find_min(0, 4)<<endl;
@@ -66,13 +69,22 @@ int main(){
 }
 
 
- 
+ ArrayTools(int myarray[],int arraysize){
+     array_size = arraysize;
+     for (int i = 0; i < array_size; i++){
+     store_array[i] = myarray[i];
+     }
+ }
  
  void ArrayTool::Print(){
      
-  for(int i = 0; i < 10; i++) {
-      cout << myarray[i] << " " << endl;
+     // for (int i = 0; i< 10; i++){
+      
+     // }
      
+  
+     
+     return;
   }
  
 

@@ -12,19 +12,19 @@
  */
  
 #include <iostream>
-#include <string>
+#include <cstring>
 using namespace std;
 
 
  
  
-void printMenu(int,string,double,int);
+void printMenu(int,char,double,int);
  
  
  int main(){
      
     const int NUMBER_OF_ITEMS = 10;
-    string name_of_item[NUMBER_OF_ITEMS];
+    char name_of_item[NUMBER_OF_ITEMS];
     double price_of_item[NUMBER_OF_ITEMS];
     int num_of_inv[NUMBER_OF_ITEMS];
     int user_choice = 0;
@@ -59,9 +59,9 @@ void printMenu(int,string,double,int);
  }
  
  
-void printMenu(int NUMBER_OF_ITEMS,string name_of_item[],double price_of_item[],int num_of_inv[]){
+void printMenu(int NUMBER_OF_ITEMs,char name_of_item[],double price_of_item[],int num_of_inv[]){
     cout << "What would you like to buy today? " << endl;
-    for (int i = 0; i < NUMBER_OF_ITEMS; i++) {
+    for (int i = 0; i < NUMBER_OF_ITEMs; i++) {
         cout << i << ": " 
              << name_of_item[i] << " "
              << "$" << price_of_item[i] << " "
