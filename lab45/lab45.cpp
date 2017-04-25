@@ -73,6 +73,10 @@ int main(){
     
     cout << "Your name is " << userFirst << " " << userLast << endl;
     
+    for(int i = 0; i < USER_NAME; i++) {
+        userFirst[i] = tolower(userFirst[i]);
+        userLast[i] = tolower(userLast[i]);
+    }
     
     userNameOne = userFirst.append(userLast); // this will set up the first username
     userNameTwo = userFirst.replace(2, MAX_FIRST,userLast); // the second username will replace the first name after the first two characters
