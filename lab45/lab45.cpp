@@ -73,9 +73,9 @@ int main(){
     
     cout << "Your name is " << userFirst << " " << userLast << endl;
     
-    for(int i = 0; i < USER_NAME; i++) {
-        userFirst[i] = tolower(userFirst[i]);
-        userLast[i] = tolower(userLast[i]);
+    for(int i = 0; i < ; i++) { // loop to go through name and lower case all capital letters
+        userFirst[i] = tolower(userFirst[i]); // lowercases first name
+        userLast[i] = tolower(userLast[i]); // lowercases last name.
     }
     
     userNameOne = userFirst.append(userLast); // this will set up the first username

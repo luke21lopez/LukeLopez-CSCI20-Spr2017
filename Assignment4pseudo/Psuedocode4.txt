@@ -1,0 +1,49 @@
+PseudoCode Assignment 4
+
+
+1. Create a student class.
+    1. FUNCTIONS within Class
+        1. getData() pulls name and answers from the main
+            1. namearray[] will store the names of students
+            2. answer array[] will store the answers for the student.
+        2. getAnswerkey()
+            1. use file input function to pull from text file.
+            2. while(!fin.eof) {fin >> answerkey[i];} i++;
+        3. compareData() will grade and compare the answers of the students.
+            1. if (studentanswer[] == answerkey[]) { totalpoints++; } // adds 1 point to total
+            2. else if (studentanswer[] == ?) {total points = total points} // nothing changes
+            3. else if (studentanswer[] != answerkey || studentanswer[] != ?) { totalpoints = totalpoints - .25; }
+            4. give total of points / total possible points
+            5. create switch statement // possible better solution.
+            6. store grade into variable.
+        4. print out results
+            1. cout << first name << last name << grade << which answers were correct // fix me
+    2. CLASS VARIABLES
+        1. string namearray[];
+        2. char studentanswerarray[];
+        3. char answerkey[];
+        4. char grade
+2. MAIN FUNCTION
+    1. VARIABLES 
+        1. const MAX = 25;
+        2. string firstname[];
+        3. string lastname[];
+        4. char answers[];
+    2. CLASS OBJECTS
+        1. Student studentOne;
+        2. Student studentTwo;
+        3. Student studentThree;
+        4. Student studentFour;
+        5. Student studentFive;
+    3. BRING IN FILES FOR STUDENT ANSWERS
+        1. fin.open(“student answers.txt”
+            1. error - if(!fin.is_open()) {out << “could not open file”}
+    4. WHILE LOOP TO PLACE DATA IN VARIABLES
+        1. while till end of file and fill arrays
+        2. namearray[];
+        3. answerarray[];
+    5. USE FUNCTIONS TO DETERMINE GRADE
+        1. getData() for one student’s info
+        2. comparedata() grade students answers
+        3. printresults() use function to tell student what they had.
+        4. run through functions for each student. 
