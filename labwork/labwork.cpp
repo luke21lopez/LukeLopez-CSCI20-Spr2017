@@ -18,18 +18,21 @@ Year: 1992
 #include <string>
 using namespace std;
 
-int main() {
-   string userInput = "Jan 12 1992";
-   istringstream inSS(userInput);
-   string userMonth;
-   int userDate = 0;
-   int userYear = 0;
+int main(){
 
-   
 
-   cout << "Month: " << userMonth << endl
-        << "Date: " << userDate << endl
-        << "Year: " << userYear << endl;
-
-   return 0;
+int size = 3;
+    double *array;
+    array = new double[size];
+    for (int i=0; i<size; i++){
+        array[i] = i;
+    }
+    
+    for (int j=0; j<size; j++){
+        cout<<j<<": "<<array[j]<<endl;
+    }
+    
+    delete array;
+    
+    return 0;
 }
